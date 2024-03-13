@@ -8,5 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class PrimeiroComponenteComponent {
 
   public inputValue = ""  
-  public minhaCor = "Red"
+  public inputValue2 = ""
+  public minhaCor = ""
+
+  eventChangeColor() {
+    this.minhaCor = "Red"
+  }
+
+  eventChangeText() {
+    this.inputValue2 = this.inputValue
+  }
 }

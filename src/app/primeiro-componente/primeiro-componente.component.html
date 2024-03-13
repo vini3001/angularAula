@@ -1,7 +1,7 @@
 <main>
-    <p>{{inputValue}}</p>
+    <p>{{inputValue2}}</p>
     <input type="text" [(ngModel)]="inputValue" >
-    <button [style.color]="minhaCor" >Clicar</button>
-    <button>Mudar cor</button>
+    <button [style.color]="minhaCor" (click)="eventChangeText()" >Clicar</button>
+    <button (click)="eventChangeColor()">Mudar cor</button>
     <app-segundo-componente></app-segundo-componente>
 </main>
